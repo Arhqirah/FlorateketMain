@@ -5,6 +5,9 @@
 body {
   margin: 0;
 }
+main {
+  overflow: hidden;
+}
 /*********** HEADER **************/
 .banner {
   background: rgb(255, 255, 255);
