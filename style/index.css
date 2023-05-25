@@ -1,16 +1,13 @@
 body {
   background-image: url(/IMAGES/Background.png);
+  background-size: cover;
 }
-main {
-  overflow: hidden;
-}
+
 .white {
   color: white;
 }
 .grid_3 {
   display: flex;
-}
-.grid_2 {
 }
 
 .grid_1 {
