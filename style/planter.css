@@ -38,7 +38,7 @@ h1 {
   color: white;
 }
 p {
-  font-size: 0.48rem;
+  font-size: 2vw;
   margin-right: 25%;
   font-weight: 100;
   color: white;
@@ -95,17 +95,13 @@ p {
   margin-top: 2%;
   margin-left: 4%;
   z-index: 10;
+  width: 70%;
 }
 
 .textbox:nth-child(2) {
-  grid-column: 1;
+  grid-column: 1 / span 2;
   grid-row: 1;
   z-index: 0;
-}
-.textbox:nth-child(3) {
-  grid-column: 2 / span 2;
-  grid-row: 1;
-  z-index: 10;
 }
 
 /*************** BONSAI **************/
@@ -125,6 +121,7 @@ p {
 .bonsai:nth-child(2) {
   grid-column: 1;
   z-index: 0;
+  margin-bottom: 3%;
 }
 .bonsai h1 {
   font-size: 3rem;
@@ -167,17 +164,20 @@ p {
   margin-bottom: 5%;
 }
 .menu:nth-child(1) {
+  grid-column: 2;
   grid-row: 1;
 }
 .menu:nth-child(2) {
+  grid-column: 2;
   grid-row: 2;
 }
 .menu:nth-child(3) {
+  grid-column: 2;
   grid-row: 3;
 }
 .menu img {
-  height: 172px;
-  width: auto;
+  height: 100%;
+  width: 100%;
 }
 .menu a:hover {
   filter: brightness(150%);
@@ -196,7 +196,7 @@ p {
   left: 2%;
   color: white;
   padding: 5px 10px;
-  font-size: 2rem;
+  font-size: 3vw;
 }
 /************* ET STORT UDVALG *******/
 .stortudvalg h1 {
@@ -257,7 +257,7 @@ p {
   }
 
   .text-limit {
-    width: 80%;
+    width: 39vw;
     text-align: start;
     filter: drop-shadow(rgba(0, 0, 0, 0.454) 1px 0px 0px);
   }
@@ -315,12 +315,8 @@ p {
 
   .botanisk_paradis {
     display: grid;
-    grid-template-columns: repeat(3) 1fr;
+    grid-template-columns: repeat(2) 1fr;
     overflow: hidden;
-  }
-  .botanisk_paradis img {
-    height: 776px;
-    width: 100%;
   }
   .botanisk_paradis h1 {
     font-family: "Noto Serif Lao", serif;
@@ -329,17 +325,18 @@ p {
   }
   .botanisk_paradis p {
     font-family: "Noto Serif Lao", serif;
-    font-size: 1.5rem;
-    line-height: 1.8;
+    font-size: 1.5vw;
+    line-height: 1.5;
     margin-left: 5%;
   }
   .textbox:nth-child(1) {
     grid-column: 1;
     grid-row: 1;
     z-index: 10;
+    width: 100%;
   }
   .textbox:nth-child(2) {
-    grid-column: 1;
+    grid-column: 1 / span 2;
     grid-row: 1;
     z-index: 0;
   }
@@ -357,7 +354,7 @@ p {
   }
 
   .bonsai img {
-    width: 80%;
+    width: 90%;
   }
   .bonsai h1 {
     font-family: "Noto Serif Lao", serif;
@@ -365,7 +362,7 @@ p {
   }
   .bonsai p {
     font-family: "Noto Serif Lao", serif;
-    font-size: 1.5rem;
+    font-size: 1.3vw;
     line-height: 1.8;
   }
   .bonsai:nth-child(1) {
@@ -374,10 +371,10 @@ p {
     z-index: 10;
     margin-top: 80px;
     margin-left: 10%;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
   }
   .bonsai:nth-child(2) {
-    margin-top: 60px;
+    margin-top: 20px;
     grid-column: 2;
     grid-row: 1;
     z-index: 0;
@@ -390,13 +387,14 @@ p {
 
   .menuBar {
     height: 172px;
+    width: 100%;
+
     margin-bottom: 80px;
   }
 
   .menuBar_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    overflow: hidden;
   }
   .menu:nth-child(1) {
     grid-column: 1;
@@ -414,8 +412,8 @@ p {
     position: relative;
   }
   .menu img {
-    height: 172px;
-    width: auto;
+    height: 10vw;
+    width: 100%;
   }
 
   .menu a {
