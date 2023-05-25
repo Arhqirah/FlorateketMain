@@ -61,7 +61,7 @@ main {
 a {
   color: rgb(73, 73, 73);
   text-decoration: none;
-  font-family: "Bodoni", sans-serif;
+  font-family: "Bodoni";
   font-size: 1.2rem;
   font-weight: 400;
 }

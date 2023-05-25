@@ -157,6 +157,15 @@ p {
     display: grid;
     grid-template-columns: repeat(2) 1fr;
   }
+  .botanisk_paradis h1 {
+    font-family: "Noto Serif Lao", serif;
+    font-weight: 900;
+  }
+  .botanisk_paradis p {
+    font-family: "Noto Serif Lao", serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+  }
   .textbox:nth-child(1) {
     grid-column: 1;
     grid-row: 1;
@@ -198,6 +207,15 @@ p {
   }
   .bonsai img {
     width: 80%;
+  }
+  .bonsai h1 {
+    font-family: "Noto Serif Lao", serif;
+    font-weight: 900;
+  }
+  .bonsai p {
+    font-family: "Noto Serif Lao", serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
   }
   .bonsai:nth-child(1) {
     grid-column: 1;
@@ -269,12 +287,12 @@ p {
   .et_stort_udvalg {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin-left: 6%;
+    margin-left: 5.5%;
     margin-bottom: 80px;
   }
   .et_stort_udvalg img {
     height: auto;
-    width: 50%;
+    width: 60%;
   }
   .udvalg:nth-child(1) {
     grid-column: 1;
