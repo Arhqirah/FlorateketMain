@@ -7,6 +7,14 @@ body {
   aspect-ratio: 1920 * 1080;
   background-size: cover;
 }
+
+video {
+  width: 100%;
+}
+img {
+  width: 100%;
+  height: auto;
+}
 main {
   max-width: 100%;
   background-size: cover;
@@ -53,7 +61,7 @@ main {
 a {
   color: rgb(73, 73, 73);
   text-decoration: none;
-  font-family: "Bodoni", sans-serif;
+  font-family: "Bodoni";
   font-size: 1.2rem;
   font-weight: 400;
 }
