@@ -1,0 +1,102 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/********* Fonts *********/
+h3 {
+  font-family: "Oooh Baby", cursive;
+  text-align: center;
+  font-size: 35px;
+  color: #8c8d6e;
+}
+
+h4 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+h6 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 90px;
+  margin: 0;
+}
+
+h5 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  margin: 0;
+}
+
+@media (min-width: 800px) {
+  /*****
+  .baggrund_b {
+    background-image: url("../IMAGES/baggrundsbillede.webp");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  ***/
+
+  .grid1_1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    margin: -30px;
+    margin-bottom: auto;
+  }
+  .imgb {
+    width: 100%;
+    height: 465px;
+    display: flex;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    justify-content: center;
+    transform: scaleX(-1);
+  }
+  .grid1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+  .grid_tekst {
+    position: relative;
+    top: -95%;
+    left: -62%;
+    z-index: 1;
+    color: white;
+    margin: 0;
+  }
+}
+.img_container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.img_container img {
+  width: 100%;
+  height: 100%;
+}
+
+.top-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+.top-img:hover {
+  opacity: 1;
+}
+
+.logo_hvid {
+  position: relative;
+  top: -122%;
+  left: -21%;
+  z-index: 1;
+  width: 15%;
+}
