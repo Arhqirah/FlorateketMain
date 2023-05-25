@@ -33,6 +33,8 @@ main {
 .logo img {
   height: 70px;
   width: auto;
+  margin-left: 10%;
+  margin-top: 2%;
 }
 
 .main-menu ul {
@@ -41,6 +43,9 @@ main {
 
   display: flex;
   gap: 55px;
+}
+.main-menu a {
+  font-size: 1.3rem;
 }
 
 /* burgermenu */
@@ -63,7 +68,7 @@ a {
   text-decoration: none;
   font-family: "Bodoni";
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 900;
 }
 a:hover {
   color: #000;
@@ -118,37 +123,85 @@ p {
 }
 
 /*********** FOOTER **************/
-.footer_text {
-  font-size: 1rem;
-  color: white;
-}
 footer {
   background-color: #8c8d6e;
-  height: 480px;
   width: auto;
+  padding: 20px;
 }
+.footer_text {
+  font-size: 0.8rem;
+  color: white;
+}
+
 .footer_grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: auto;
+  gap: 5%;
+  margin-right: 5%;
+  margin-bottom: 10%;
 }
 .foot:nth-child(1) {
-  margin-top: 80px;
-  margin-left: 150px;
   grid-column: 1;
+  grid-row: 2;
+  width: 80%;
 }
 .foot:nth-child(2) {
-  margin-top: 80px;
-  margin-left: 100px;
-  grid-column: 2;
-}
-.foot:nth-child(3) {
-  margin-top: 80px;
-  margin-left: 0;
-  grid-column: 3;
+  grid-column: 1;
 }
 .foot:nth-child(4) {
-  margin-top: 80px;
-  margin-left: -100px;
-  grid-column: 4;
-  width: 60%;
+  margin-top: -10%;
+}
+
+@media (min-width: 768px) {
+  footer {
+    background-color: #8c8d6e;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 25vw;
+  }
+  .footer_text {
+    font-size: 1.1rem;
+    color: white;
+  }
+
+  .footer_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 1%;
+    box-sizing: border-box;
+  }
+
+  .foot:nth-child(1) {
+    margin-top: 80px;
+    margin-left: 150px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .foot:nth-child(2) {
+    margin-top: 80px;
+    margin-left: 100px;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .foot:nth-child(3) {
+    margin-top: 80px;
+    margin-left: 0;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .foot:nth-child(4) {
+    margin-top: 80px;
+    grid-column: 4;
+    grid-row: 1;
+    width: 50%;
+  }
+  .foot:nth-child(4) img {
+    margin-top: 53%;
+  }
 }
