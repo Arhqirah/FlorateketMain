@@ -75,6 +75,12 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .logo img {
+    height: 50px;
+    width: auto;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
   .toggle-btn {
     display: block;
   }
