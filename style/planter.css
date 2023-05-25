@@ -270,7 +270,7 @@ p {
     text-decoration: none;
   }
   .menu a:hover {
-    filter: brightness(120%);
+    filter: brightness(150%);
   }
 
   .image-text {
