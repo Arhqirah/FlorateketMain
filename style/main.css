@@ -7,6 +7,14 @@ body {
   aspect-ratio: 1920 * 1080;
   background-size: cover;
 }
+
+video {
+  width: 100%;
+}
+img {
+  width: 100%;
+  height: auto;
+}
 main {
   max-width: 100%;
   background-size: cover;
