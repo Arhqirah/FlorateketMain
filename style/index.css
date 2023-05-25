@@ -3,6 +3,14 @@ body {
   background-size: cover;
 }
 
+video {
+  width: 100%;
+}
+img {
+  height: auto;
+  width: 100%;
+}
+
 .white {
   color: white;
 }
@@ -14,6 +22,14 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 100px;
+  align-items: center;
+}
+
+.grid_2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 100px;
+  align-items: center;
 }
 .grid:nth-child(1) {
   grid-column: 1 / span 3;
@@ -24,6 +40,35 @@ body {
   grid-column: 2;
   grid-row: 1;
   z-index: 10;
+  text-align: center;
+}
+.grid_1 p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.grid_1 h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.grid_1 a {
+  color: white;
+}
+.grid_1 a:hover {
+  color: rgb(157, 157, 157);
+}
+
+.grid_2 h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.grid_2 a {
+  color: white;
+}
+
+.grid_2 a:hover {
+  color: rgb(157, 157, 157);
 }
 
 .billeder {
