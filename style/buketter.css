@@ -14,12 +14,14 @@ h3 {
 h4 {
   font-family: "Bodoni";
   text-align: center;
+  margin: 0;
 }
 
 h6 {
   font-family: "Bodoni";
-  font-size: 90px;
+  font-size: 55px;
   margin: 0;
+  text-align: center;
 }
 
 h5 {
@@ -105,4 +107,8 @@ h5 {
 .kontakt {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
+}
+
+.tekst {
+  border-color: #c8aa8c;
 }
