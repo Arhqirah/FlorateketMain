@@ -35,11 +35,11 @@ main {
 }
 h1 {
   font-family: "Oooh Baby", cursive;
-  font-size: 0.9rem;
+  font-size: 2.1vw;
   color: white;
 }
 p {
-  font-size: 2vw;
+  font-size: 1.6vw;
   margin-right: 25%;
   font-weight: 100;
   color: white;
@@ -332,6 +332,7 @@ p {
     margin-left: 5%;
   }
   .textbox:nth-child(1) {
+    margin-top: 7%;
     grid-column: 1;
     grid-row: 1;
     z-index: 10;
