@@ -146,7 +146,6 @@ footer {
   height: auto;
   gap: 5%;
   margin-right: 5%;
-  margin-bottom: 10%;
 }
 .foot:nth-child(1) {
   grid-column: 1;
