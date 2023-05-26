@@ -112,17 +112,32 @@ h1 {
   color: black;
   font-weight: 700;
   text-align: left;
+  font-family: "Oooh Baby", cursive;
 }
 h2 {
   color: black;
   font-weight: 700;
   text-align: left;
+  font-family: "Oooh Baby", cursive;
 }
+h3 {
+  font-family: "Oooh Baby", cursive;
+}
+h4 {
+  font-family: "Bodoni" 72 Oldstyle;
+}
+h5 {
+  font-family: "Bodoni" 72 Oldstyle;
+}
+h6 {
+  font-family: "Bodoni" 72 Oldstyle;
+}
+
 p {
   color: black;
   font-weight: 700;
   text-align: left;
-  font-family: Bodoni 72 Oldstyle;
+  font-family: "Noto Serif Lao", serif;
 }
 .white {
   color: white;
