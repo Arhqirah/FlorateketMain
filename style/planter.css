@@ -34,11 +34,12 @@ main {
   filter: drop-shadow(rgba(0, 0, 0, 0.454) 1px 0px 0px);
 }
 h1 {
-  font-size: 0.9rem;
+  font-family: "Oooh Baby", cursive;
+  font-size: 2.1vw;
   color: white;
 }
 p {
-  font-size: 2vw;
+  font-size: 1.6vw;
   margin-right: 25%;
   font-weight: 100;
   color: white;
@@ -267,6 +268,7 @@ p {
     filter: drop-shadow(rgba(0, 0, 0, 0.454) 1px 0px 0px);
   }
   h1 {
+    font-family: "Oooh Baby", cursive;
     font-size: 3vw;
     color: white;
   }
@@ -319,7 +321,7 @@ p {
     overflow: hidden;
   }
   .botanisk_paradis h1 {
-    font-family: "Noto Serif Lao", serif;
+    font-family: "Oooh Baby", cursive;
     font-weight: 900;
     margin-left: 5%;
   }
@@ -330,6 +332,7 @@ p {
     margin-left: 5%;
   }
   .textbox:nth-child(1) {
+    margin-top: 7%;
     grid-column: 1;
     grid-row: 1;
     z-index: 10;
@@ -357,7 +360,7 @@ p {
     width: 90%;
   }
   .bonsai h1 {
-    font-family: "Noto Serif Lao", serif;
+    font-family: "Oooh Baby", cursive;
     font-weight: 900;
   }
   .bonsai p {
