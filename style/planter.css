@@ -1,13 +1,17 @@
-/*
 body {
   background-image: url(/IMAGES/Background.png);
   background-size: cover;
 }
-img {
-  height: 100%;
-  width: 100%;
+main {
+  overflow: hidden;
 }
+
 .text_align {
+  text-align: center;
+  align-items: center;
+  margin: 0;
+}
+.text_align2 {
   text-align: center;
   align-items: center;
   margin: 0;
@@ -17,16 +21,27 @@ img {
 }
 
 .text-limit {
-  width: 150px;
+  width: 100%;
+  text-align: start;
+  margin-right: 5%;
+
+  filter: drop-shadow(rgba(0, 0, 0, 0.454) 1px 0px 0px);
+}
+.text-limit1 {
+  margin-left: 4%;
+  margin-right: 2%;
   text-align: start;
   filter: drop-shadow(rgba(0, 0, 0, 0.454) 1px 0px 0px);
 }
 h1 {
-  font-size: 0.8rem;
+  font-family: "Oooh Baby", cursive;
+  font-size: 2.1vw;
   color: white;
 }
 p {
-  font-size: 0.4rem;
+  font-size: 1.6vw;
+  margin-right: 25%;
+  font-weight: 100;
   color: white;
 }
 .black {
@@ -35,8 +50,11 @@ p {
 .border {
   border: #8c8d6e solid 20px;
 }
+.border1 {
+  border: #8c8d6e solid 5px;
+}
 /********** PLANTE FORSIDE **************/
-/*
+
 .planterForside {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -46,6 +64,7 @@ p {
   grid-row: 1;
   z-index: 10;
   place-self: center;
+  width: 60%;
 }
 .planter:nth-child(2) {
   grid-column: 1;
@@ -54,18 +73,19 @@ p {
   background-color: #8c8d6e;
 }
 /********** SECTION 1 **************/
-/*
+
 .section1 {
-  height: 40px;
+  height: 20px;
   background-color: #8c8d6e;
-  margin-bottom: 40px;
+  margin-bottom: 5%;
 }
 /************ BOTANISK PARADIS ***********/
-/*
+
 .botanisk_paradis {
   display: grid;
-  grid-template-columns: repeat(1) 1fr;
+  grid-template-columns: repeat(2) 1fr;
 }
+
 .botanisk_paradis img {
   height: auto;
   width: 100%;
@@ -73,31 +93,162 @@ p {
 .textbox:nth-child(1) {
   grid-column: 1;
   grid-row: 1;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: 4%;
   z-index: 10;
+  width: 70%;
 }
+
 .textbox:nth-child(2) {
-  grid-column: 1;
+  grid-column: 1 / span 2;
   grid-row: 1;
   z-index: 0;
 }
 
 /*************** BONSAI **************/
-/*
+
 .bonsai_container {
   display: grid;
   grid-template-columns: repeat(1) 1fr;
   position: relative;
+  border: #8c8d6e 5px;
+  margin-bottom: 5%;
 }
-*/
+.bonsai:nth-child(1) {
+  grid-column: 1;
+  grid-row: 2;
+  z-index: 0;
+}
+.bonsai:nth-child(2) {
+  grid-column: 1;
+  z-index: 0;
+  margin-bottom: 3%;
+}
+.bonsai h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.bonsai p {
+  font-size: 1rem;
+  text-align: left;
+}
+.bonsai img {
+  width: 80%;
+  height: auto;
+  align-items: center;
+  margin-left: 5%;
+}
+#bonsai img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.bonsai img {
+  border: #8c8d6e solid 20px;
+}
+/********* MENUBAR *******/
+.menuBar {
+  height: 172px;
+  margin-bottom: 80px;
+  margin-top: 4%;
+}
+.menuBar img {
+  width: 100%;
+  height: auto;
+}
+.menuBar_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  margin-bottom: 5%;
+}
+.menu:nth-child(1) {
+  grid-column: 2;
+  grid-row: 1;
+}
+.menu:nth-child(2) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.menu:nth-child(3) {
+  grid-column: 2;
+  grid-row: 3;
+}
+.menu img {
+  height: 100%;
+  width: 100%;
+}
+.menu a:hover {
+  filter: brightness(150%);
+}
+.menu {
+  position: relative;
+}
+.menu a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+.image-text {
+  position: absolute;
+  top: 4%;
+  left: 2%;
+  color: white;
+  padding: 5px 10px;
+  font-size: 3vw;
+}
+/************* ET STORT UDVALG *******/
+.stortudvalg h1 {
+  font-size: 2rem;
+}
+.stortudvalg p {
+  font-size: 1rem;
+}
 
-@media screen and (min-width: 768px) {
+.et_stort_udvalg {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-left: 5.5%;
+  margin-right: 5.5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.et_stort_udvalg img {
+  height: auto;
+  width: 60%;
+}
+.udvalg:nth-child(1) {
+  grid-column: 1;
+}
+.udvalg:nth-child(2) {
+  grid-column: 2;
+}
+.udvalg:nth-child(3) {
+  grid-column: 3;
+}
+.udvalg:nth-child(4) {
+  grid-column: 4;
+}
+.udvalg:nth-child(5) {
+  grid-column: 5;
+}
+
+@media (min-width: 768px) {
   body {
     background-image: url(/IMAGES/Background.png);
     background-size: cover;
   }
+  main {
+    overflow: hidden;
+  }
   .text_align {
+    text-align: center;
+    align-items: center;
+    margin: 0;
+  }
+  .text_align2 {
     text-align: center;
     align-items: center;
     margin: 0;
@@ -107,29 +258,39 @@ p {
   }
 
   .text-limit {
-    width: 650px;
+    width: 39vw;
+    text-align: start;
+    filter: drop-shadow(rgba(0, 0, 0, 0.454) 1px 0px 0px);
+  }
+  .text-limit1 {
+    width: 80%;
     text-align: start;
     filter: drop-shadow(rgba(0, 0, 0, 0.454) 1px 0px 0px);
   }
   h1 {
-    font-size: 4rem;
+    font-family: "Oooh Baby", cursive;
+    font-size: 3vw;
     color: white;
   }
   p {
-    font-size: 2rem;
+    font-size: 1vw;
     color: white;
   }
   .black {
     color: rgb(69, 69, 69);
   }
   .border {
-    border: #8c8d6e solid 20px;
+    border: #8c8d6e solid 10px;
+  }
+  .border1 {
+    border: #8c8d6e solid 10px;
   }
   /********** PLANTE FORSIDE **************/
 
   .planterForside {
     display: grid;
     grid-template-columns: 1fr;
+    overflow: hidden;
   }
   .planter:nth-child(1) {
     grid-column: 1;
@@ -143,6 +304,7 @@ p {
     z-index: 0;
     background-color: #8c8d6e;
   }
+
   /********** SECTION 1 **************/
 
   .section1 {
@@ -156,26 +318,35 @@ p {
   .botanisk_paradis {
     display: grid;
     grid-template-columns: repeat(2) 1fr;
+    overflow: hidden;
   }
   .botanisk_paradis h1 {
-    font-family: "Noto Serif Lao", serif;
+    font-family: "Oooh Baby", cursive;
     font-weight: 900;
+    margin-left: 5%;
   }
   .botanisk_paradis p {
     font-family: "Noto Serif Lao", serif;
-    font-size: 1.5rem;
-    line-height: 1.8;
+    font-size: 1.5vw;
+    line-height: 1.5;
+    margin-left: 5%;
   }
   .textbox:nth-child(1) {
+    margin-top: 7%;
     grid-column: 1;
     grid-row: 1;
     z-index: 10;
-    margin-left: 100px;
+    width: 100%;
   }
   .textbox:nth-child(2) {
     grid-column: 1 / span 2;
     grid-row: 1;
     z-index: 0;
+  }
+  .textbox:nth-child(3) {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    z-index: 10;
   }
 
   /*************** BONSAI **************/
@@ -183,38 +354,18 @@ p {
   .bonsai_container {
     display: grid;
     grid-template-columns: repeat(2) 1fr;
-    position: relative;
-  }
-  .buttonStyle {
-    position: absolute;
-    top: 76%;
-    left: 39%;
-    background-color: #8c8d6e;
-    border: none;
-    color: white;
-    padding: 10px 26px;
-    text-align: center;
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: bolder;
-    cursor: pointer;
   }
 
-  .bonsai {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
   .bonsai img {
-    width: 80%;
+    width: 90%;
   }
   .bonsai h1 {
-    font-family: "Noto Serif Lao", serif;
+    font-family: "Oooh Baby", cursive;
     font-weight: 900;
   }
   .bonsai p {
     font-family: "Noto Serif Lao", serif;
-    font-size: 1.5rem;
+    font-size: 1.3vw;
     line-height: 1.8;
   }
   .bonsai:nth-child(1) {
@@ -222,46 +373,50 @@ p {
     grid-row: 1;
     z-index: 10;
     margin-top: 80px;
-    margin-bottom: 80px;
-    margin-left: 50px;
+    margin-left: 10%;
+    margin-bottom: 20px;
   }
   .bonsai:nth-child(2) {
-    margin-top: 60px;
+    margin-top: 20px;
     grid-column: 2;
     grid-row: 1;
     z-index: 0;
+  }
+  .bonsai:nth-child(2) p {
+    margin-left: 10%;
   }
 
   /*************** MENUBAR *************/
 
   .menuBar {
     height: 172px;
+    width: 100%;
+
     margin-bottom: 80px;
   }
-  .menuBar img {
-    width: 100%;
-    height: 10%;
-  }
+
   .menuBar_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    overflow: hidden;
   }
   .menu:nth-child(1) {
     grid-column: 1;
+    grid-row: 1;
   }
   .menu:nth-child(2) {
     grid-column: 2;
+    grid-row: 1;
   }
   .menu:nth-child(3) {
     grid-column: 3;
+    grid-row: 1;
   }
   .menu {
     position: relative;
   }
   .menu img {
-    height: 172px;
-    width: auto;
+    height: 10vw;
+    width: 100%;
   }
 
   .menu a {
@@ -270,7 +425,7 @@ p {
     text-decoration: none;
   }
   .menu a:hover {
-    filter: brightness(120%);
+    filter: brightness(150%);
   }
 
   .image-text {
@@ -284,6 +439,12 @@ p {
   }
   /************* ET STORT UDVALG *************/
 
+  .stortudvalg h1 {
+    font-size: 4rem;
+  }
+  .stortudvalg p {
+    font-size: 2rem;
+  }
   .et_stort_udvalg {
     display: grid;
     grid-template-columns: repeat(5, 1fr);

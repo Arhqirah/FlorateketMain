@@ -4,6 +4,30 @@ var imageSrc3 = "IMAGES/AnotherBonsai2.png";
 var currentImageSrc = imageSrc1;
 var imgElement = document.getElementById("bonsaiImage");
 
+function fadeOut() {
+  var opacity = 1;
+  var fadeInterval = setInterval(function () {
+    opacity -= 0.05; // Adjust the decrement value to control the fade intensity
+    imgElement.style.opacity = opacity;
+    if (opacity <= 0) {
+      clearInterval(fadeInterval);
+      toggleImage();
+      fadeIn();
+    }
+  }, 50); // Adjust the interval to control the smoothness of the fade
+}
+
+function fadeIn() {
+  var opacity = 0;
+  var fadeInterval = setInterval(function () {
+    opacity += 0.05; // Adjust the increment value to control the fade intensity
+    imgElement.style.opacity = opacity;
+    if (opacity >= 1) {
+      clearInterval(fadeInterval);
+    }
+  }, 50); // Adjust the interval to control the smoothness of the fade
+}
+
 function toggleImage() {
   if (currentImageSrc === imageSrc1) {
     imgElement.src = imageSrc2;
@@ -16,3 +40,5 @@ function toggleImage() {
     currentImageSrc = imageSrc1;
   }
 }
+
+setInterval(fadeOut, 5500);
