@@ -147,9 +147,10 @@ p {
 footer {
   background-color: #8c8d6e;
   background-size: cover;
-  width: 100%;
+  width: auto;
   height: 100%;
   padding: 20px;
+  overflow: hidden;
 }
 .footer_text {
   font-size: 2vw;
@@ -192,6 +193,7 @@ footer {
     justify-content: center;
     align-items: flex-start;
     height: 50%;
+    overflow: hidden;
   }
   .footer_text {
     font-size: 1vw;
