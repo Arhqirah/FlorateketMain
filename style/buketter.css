@@ -2,7 +2,7 @@
 h3 {
   font-family: "Oooh Baby", cursive;
   text-align: center;
-  font-size: 35px;
+  font-size: 28px;
   color: #8c8d6e;
 }
 
@@ -14,7 +14,7 @@ h4 {
 
 h6 {
   font-family: "Bodoni";
-  font-size: 55px;
+  font-size: 45px;
   margin: 0;
   text-align: center;
 }
@@ -31,7 +31,7 @@ h5 {
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 19%;
+  top: 18%;
   right: 42%;
   z-index: 1000;
   width: 50%;
@@ -146,12 +146,24 @@ h5 {
   .tekst {
     position: absolute;
     color: white;
-    top: 108%;
+    top: 104.5%;
     left: 26%;
     justify-content: center;
     z-index: 1000;
   }
   h4 {
     font-size: 20px;
+  }
+  h3 {
+    font-family: "Oooh Baby", cursive;
+    text-align: center;
+    font-size: 35px;
+    color: #8c8d6e;
+  }
+  h6 {
+    font-family: "Bodoni";
+    font-size: 55px;
+    margin: 0;
+    text-align: center;
   }
 }
