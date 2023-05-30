@@ -568,56 +568,6 @@ iframe {
   margin-left: 0.35%;
 }
 
-/*********** FOOTER **************/
-.footer_text {
-  font-size: 1cqw;
-  color: white;
-}
-footer {
-  background-color: #8c8d6e;
-  width: 100%;
-  height: auto;
-
-  position: relative;
-  overflow: hidden;
-}
-.footer_grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-.foot:nth-child(1) {
-  margin-top: 80px;
-  margin-left: 20%;
-  grid-column: 1;
-}
-.foot:nth-child(2) {
-  margin-top: 80px;
-  margin-left: 40%;
-  grid-column: 2;
-}
-.foot:nth-child(3) {
-  margin-top: 80px;
-  margin-left: 0;
-  grid-column: 3;
-}
-.foot:nth-child(4) {
-  margin-top: 80px;
-  margin-left: -40%;
-  grid-column: 4;
-}
-.foot h2 {
-  color: white;
-}
-
-.content6 {
-  position: relative;
-  width: 30%;
-
-  left: 20%;
-  margin-top: -7%;
-  margin-bottom: 5%;
-}
-
 .content6 button {
   position: relative;
   padding: 3% 6%;
