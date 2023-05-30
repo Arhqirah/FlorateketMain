@@ -12,7 +12,7 @@ video {
 .section1 {
   position: relative;
   top: -1%;
-  height: 60px;
+  height: 20px;
   background-color: #8c8d6e;
 }
 img {
@@ -30,14 +30,14 @@ img {
 .grid_1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 100px;
+  margin-top: 5px;
   align-items: center;
 }
 
 .grid_2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 100px;
+  margin-top: 5px;
   align-items: center;
 }
 .grid:nth-child(1) {
@@ -53,13 +53,15 @@ img {
 }
 .grid_1 p {
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
   filter: drop-shadow(black 1px 0 5px);
+  margin: 0%;
 }
 .grid_1 h2 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   filter: drop-shadow(black 1px 0 5px);
+  margin: 0%;
 }
 .grid_1 a {
   color: rgb(255, 255, 255);
@@ -68,6 +70,7 @@ img {
   border: #8c8d6e solid 2px;
   border-radius: 30%;
   filter: drop-shadow(black 1px 0 5px);
+  font-size: 0.7rem;
 }
 .grid_1 a:hover {
   color: rgb(157, 157, 157);
@@ -75,7 +78,7 @@ img {
 
 .grid_2 h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   color: white;
   filter: drop-shadow(black 1px 0 5px);
 }
@@ -87,6 +90,7 @@ img {
   border: #8c8d6e solid 2px;
   border-radius: 30%;
   filter: drop-shadow(black 1px 0 5px);
+  font-size: 0.7rem;
 }
 
 .grid_2 a:hover {
@@ -101,11 +105,11 @@ img {
 .grid_3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 4%;
   margin: 5%;
 }
 .grid_3 img {
-  border: #8c8d6e solid 10px;
+  border: #8c8d6e solid 3px;
 }
 
 .grid_4 {
@@ -115,6 +119,15 @@ img {
   margin-left: 15%;
   margin-right: 15%;
 }
+
+.grid_4 p {
+  font-size: 0.6rem;
+}
+
+.grid_4 h3 {
+  font-size: 1rem;
+}
+
 .tekst1 {
   grid-column: 1 / span 3;
 }
